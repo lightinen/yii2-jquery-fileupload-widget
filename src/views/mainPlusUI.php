@@ -9,7 +9,7 @@ $context = $this->context;
     <div class="col-lg-7">
         <!-- The fileinput-button span is used to style the file input field as button -->
         <span class="btn btn-success fileinput-button">
-            <i class="glyphicon glyphicon-plus"></i>
+            <i class="bi bi-plus-circle"></i>
             <span><?= Yii::t('jqueryfileupload', 'Add files') ?>...</span>
 
             <?php
@@ -20,15 +20,15 @@ $context = $this->context;
 
         </span>
         <button type="submit" class="btn btn-primary start">
-            <i class="glyphicon glyphicon-upload"></i>
+            <i class="bi bi-arrow-up-circle"></i>
             <span><?= Yii::t('jqueryfileupload', 'Start upload') ?></span>
         </button>
         <button type="reset" class="btn btn-warning cancel">
-            <i class="glyphicon glyphicon-ban-circle"></i>
+            <i class="bi bi-x-circle"></i>
             <span><?= Yii::t('jqueryfileupload', 'Cancel upload') ?></span>
         </button>
         <button type="button" class="btn btn-danger delete">
-            <i class="glyphicon glyphicon-trash"></i>
+            <i class="bi bi-trash"></i>
             <span><?= Yii::t('jqueryfileupload', 'Delete') ?></span>
         </button>
         <input type="checkbox" class="toggle">

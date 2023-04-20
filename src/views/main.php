@@ -8,7 +8,7 @@ $context = $this->context;
     <div class="col-lg-7">
         <!-- The fileinput-button span is used to style the file input field as button -->
         <span class="btn btn-success fileinput-button">
-            <i class="glyphicon glyphicon-plus"></i>
+            <i class="bi bi-plus-circle"></i>
             <span><?= Yii::t('jqueryfileupload', 'Add files') ?>...</span>
 
             <?php

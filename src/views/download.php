@@ -27,13 +27,13 @@
         <td>
             {% if (file.deleteUrl) { %}
                 <button class="btn btn-danger delete" data-type="{%=file.deleteType%}" data-url="{%=file.deleteUrl%}"{% if (file.deleteWithCredentials) { %} data-xhr-fields='{"withCredentials":true}'{% } %}>
-                    <i class="glyphicon glyphicon-trash"></i>
+                    <i class="bi bi-trash"></i>
                     <span><?= Yii::t('jqueryfileupload', 'Delete') ?></span>
                 </button>
                 <input type="checkbox" name="delete" value="1" class="toggle">
             {% } else { %}
                 <button class="btn btn-warning cancel">
-                    <i class="glyphicon glyphicon-ban-circle"></i>
+                    <i class="bi bi-x-circle"></i>
                     <span><?= Yii::t('jqueryfileupload', 'Cancel') ?></span>
                 </button>
             {% } %}

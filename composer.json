@@ -21,7 +21,8 @@
         "yiisoft/yii2-bootstrap5": "~2.0.0",
         "yiisoft/yii2-jui": "*",
         "bower-asset/blueimp-file-upload": "^9",
-        "bower-asset/blueimp-gallery": "~2.17"
+        "bower-asset/blueimp-gallery": "~2.17",
+        "twbs/bootstrap-icons": "^1.10"
     },
     "autoload": {
         "psr-4": {

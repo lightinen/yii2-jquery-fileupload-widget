@@ -16,13 +16,13 @@
         <td>
             {% if (!i && !o.options.autoUpload) { %}
                 <button class="btn btn-primary start" disabled>
-                    <i class="glyphicon glyphicon-upload"></i>
+                    <i class="bi bi-arrow-up-circle"></i>
                     <span><?= Yii::t('jqueryfileupload', 'Start') ?></span>
                 </button>
             {% } %}
             {% if (!i) { %}
                 <button class="btn btn-warning cancel">
-                    <i class="glyphicon glyphicon-ban-circle"></i>
+                    <i class="bi bi-x-circle"></i>
                     <span><?= Yii::t('jqueryfileupload', 'Cancel') ?></span>
                 </button>
             {% } %}
