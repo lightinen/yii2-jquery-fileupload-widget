@@ -9,6 +9,20 @@ Inspired by https://github.com/2amigos/yii2-file-upload-widget
 
 ### Installation
 
+Add to ```composer.json``` lines to load plugin from this repo at the end of file:
+
+```json
+
+{
+  "repositories": [
+    {
+      "type":"git",
+      "url": "https://github.com/lightinen/yii2-jquery-fileupload-widget.git"
+    }
+  ]
+}
+```
+
 From command line
 
 ```bash
@@ -17,10 +31,12 @@ $ composer require limion/yii2-jquery-fileupload-widget:~1.0
 
 or add to your composer.json
 
-```
-"require": {
-	"limion/yii2-jquery-fileupload-widget": "~1.0"
-}	
+```json
+{
+  "require": {
+    "limion/yii2-jquery-fileupload-widget": "~1.0"
+  }
+}
 ```
 
 ### Usage
@@ -36,7 +52,7 @@ use limion\jqueryfileupload\JQueryFileUpload;
 <?= JQueryFileUpload::widget([
         'model' => $model,
         'attribute' => 'img',
-	'url' => ['upload', 'someparam' => 'somevalue'], // your route for saving images,
+	    'url' => ['upload', 'someparam' => 'somevalue'], // your route for saving images,
         'appearance'=>'ui', // available values: 'ui','plus' or 'basic'
         'gallery'=>true, // whether to use the Bluimp Gallery on the images or not
         'formId'=>$form->id,
@@ -63,7 +79,7 @@ use limion\jqueryfileupload\JQueryFileUpload;
 <?= JQueryFileUpload::widget([
         'model' => $model,
         'attribute' => 'img',
-	'url' => ['upload', 'someparam' => 'somevalue'], // your route for saving images,
+	    'url' => ['upload', 'someparam' => 'somevalue'], // your route for saving images,
         'appearance'=>'ui', // available values: 'ui','plus' or 'basic'
         'uploadTemplateView'=>'@app/views/jqueryfileupload/upload', // upload template
         'downloadTemplateView'=>'@app/views/jqueryfileupload/download', // download template
@@ -76,6 +92,8 @@ use limion\jqueryfileupload\JQueryFileUpload;
     ]);?>
 <?php ActiveForm::end(); ?>    
 ```
+
+ClientOptions: https://github.com/blueimp/jQuery-File-Upload/wiki/Options
 
 #### Plus version
 See: https://blueimp.github.io/jQuery-File-Upload/basic-plus.html
