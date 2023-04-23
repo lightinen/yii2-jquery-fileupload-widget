@@ -1,5 +1,5 @@
 <!-- The template to display files available for download -->
-<script id="template-download" type="text/x-tmpl">
+<script id="template-download" type="text/x-template">
 {% for (var i=0, file; file=o.files[i]; i++) { %}
     <tr class="template-download fade show">
         <td>
